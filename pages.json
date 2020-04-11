@@ -3,10 +3,44 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "ToDay"
+			}
+		},{
+			"path": "pages/calendar/index",
+			"style": {
+				"navigationBarTitleText": "日历"
+			}
+		},{
+			"path": "pages/set/index",
+			"style": {
+				"navigationBarTitleText": "设置"
 			}
 		}
 	],
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#2581b3",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabBar/todo.png",
+				"selectedIconPath": "static/tabBar/todo_color.png",
+				"text": "ToDos"
+			}, 
+			{
+					"pagePath": "pages/calendar/index",
+					"iconPath": "static/tabBar/calendar.png",
+					"selectedIconPath": "static/tabBar/calendar_color.png",
+					"text": "Calendar"
+			},
+			{
+					"pagePath": "pages/set/index",
+					"iconPath": "static/tabBar/set.png",
+					"selectedIconPath": "static/tabBar/set_color.png",
+					"text": "Set up"
+			}]
+	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

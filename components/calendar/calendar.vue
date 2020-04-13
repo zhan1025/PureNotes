@@ -49,6 +49,7 @@
 				</view>
 				<view class="uni-calendar__weeks" v-for="(item,weekIndex) in weeks" :key="weekIndex">
 					<view class="uni-calendar__weeks-item" v-for="(weeks,weeksIndex) in item" :key="weeksIndex">
+						
 						<calendar-item :weeks="weeks" :selectedDate="selectedDate" :calendar="calendar" :selected="selected" @change="choiceDate"></calendar-item>
 					</view>
 				</view>
@@ -85,7 +86,7 @@
 			},
 			startDate: {
 				type: String,
-				default: ''
+				default: new Date().toJSON().split('T')[0]
 			},
 			endDate: {
 				type: String,
